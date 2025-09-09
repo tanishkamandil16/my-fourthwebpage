@@ -1,0 +1,698 @@
+*{
+margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #F8F8F8;
+    position:relative;
+    padding-top: 0.1px;
+
+}
+#nav{
+    height: 11vh;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+#nav h2{
+    height: 100%;
+    width: 24%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   border-right: 2px solid black;
+    font-size: 26px;
+    font-weight: 600;
+
+}
+#nav h1{
+    height: 100%;
+    width: 22%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Climate Crisis', sans-serif;
+   font-weight:1000;
+   font-size: 40px;
+   letter-spacing: -5px;
+   position: relative;
+  
+
+}
+#nav h1:after{
+    content: "©";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    position: absolute;
+    top:21%;
+    right: 23%;
+
+}
+#nav h1::before{
+    content: "modelmanagement";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    position: absolute;
+    letter-spacing: 1px;
+    bottom: 15%;
+    right: 22%;
+    color: #666;
+}
+#nav h2:nth-last-child(1){
+   width: 10%;
+}
+#nav h2:nth-last-child(2){
+    width:29% ;
+}
+#center{
+    width:100%;
+    height:90%;
+    position: relative;
+    padding: 4.5vw;
+}
+#content{
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 54%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    
+    padding: 3vw;
+    color: white;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5vw;
+}
+#over1 h1{
+    font-family: 'Climate Crisis', sans-serif;
+   font-weight:1000;
+   font-size: 2.7vw;
+   letter-spacing: -4px;
+   
+}
+#over1 h2{
+   font-size: 1vw;
+   padding: 2vw 2.5vw;
+   border-radius: 50%;
+   border: 1px solid white;
+   border-bottom: 5px solid white;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white ;
+    padding: 1.5vw 0;
+}
+#over2 h4{
+ font-size: 1vw;   
+ font-weight: 500;
+}
+#over2 img{
+    height: 4vw;
+}
+#scroll{
+    height:40vh ;
+    width: 100%;
+    
+    white-space: nowrap;
+    overflow-x:hidden;
+    overflow-y: hidden;
+}
+#container{
+    height: 100%;
+    width: 110%;
+   
+    display: inline-block;
+    padding: 1vw;
+   animation-name: anime;
+   animation-duration: 8s; 
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+
+}
+#scroll img{
+    
+    height: 95%;
+    border-radius: 50%;
+    width: 15%;
+    margin:1vw ;
+    object-fit: cover;
+    object-position: 30% 30%;
+    
+}
+@keyframes anime {
+     from{
+        transform:translateX(0);
+     }
+     to{
+        transform:translateX(-100%);
+     }
+    
+}
+#alphabet{
+    height: 10vh;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+#alphabet h5{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px;
+    border-bottom: 2px solid black;
+}
+#alphabet h6{
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 4px;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #00000000;
+    transition: all ease 0.2s;
+}
+
+#alphabet h6:hover{
+    border: 1px solid #000;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:2vw 5vw;
+}
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://i.pinimg.com/736x/ca/fb/f8/cafbf8e71515b8dc7318d7e7b283b341.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#page2-part2{
+    height: 100%;
+    width: 46%;
+}
+#page2-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+   
+}
+#text{
+    height:auto;
+    width: 100%;
+    margin-top: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+    
+}
+#text1 h2{
+    font-size: 1.5vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    padding-right: 6vw;
+    
+}
+#text2 h3{
+    font-size: 1vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    
+}
+#shot h2{
+    font-family: 'Climate Crisis', sans-serif;
+   padding-left: 5vw;
+   font-weight: 1000;
+   letter-spacing:-1px;
+}
+#page-circle{
+  
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+#circle{
+    height: 100%;
+    width: 50%;
+    
+    
+
+
+}
+#circle-image img{
+    height: 40%;
+    width: 40%;
+    margin-top:25% ;
+    margin-left: 20%;
+    animation-name: circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#circle-content h3{
+    height: 50%;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+#page-image{
+    height: 100%;
+    width:60%;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#page-image img{
+    height: 90%;
+    width: 90%;
+    object-position:80% 30%;
+    object-fit: cover;
+}
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#page10{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+}
+#page10-image{
+    height: 100%;
+    width: 100%;
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#page10-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+    background-color: #F8F8F8;
+}
+#page3>h1{
+    text-align: center;
+     font-family: 'Climate Crisis', sans-serif;
+     font-size: 4vw;
+     font-weight: 1000;
+   letter-spacing:-6px;
+   margin-bottom: 1vw;
+}
+.elem{
+    height: 16vh;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 2vw ;
+    position: relative;
+}
+.elem img{
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      border-radius: 50%;
+     left: 15%;
+     opacity: 0;
+     transition: all ease 0.8s;
+     object-fit: cover;
+}
+.elem h4{
+    font-size: 1vw;
+    font-weight: 500;
+    width: 6%;
+}
+.elem .elem-part2{
+    width: 40%;
+}
+.elem .elem-part2 h1{
+    font-size: 2.6vw;
+    font-weight: 500;
+}
+.elem .elem-part2 h5{
+    font-size: 1vw;
+    font-weight: 600;
+}
+.elem:nth-last-child(1){
+    border-bottom:2px solid black ;
+}
+.elem:hover img{
+    opacity: 1;
+    left:27%;
+}
+ #page8{
+    height: 100%;
+    width: 100%;
+    
+    display:flex;
+    align-items: center;
+    justify-content:center;
+ }
+ #page8-image{
+    height: 100%;
+    width: 50%;
+   
+    
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    
+ }
+#page8-content{
+    height: 100%;
+    width:50%;
+ }
+#page8-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    padding:2vw;
+}
+#page8-content h1{
+    font-family: 'Climate Crisis', sans-serif;
+     font-size: 4vw;
+     font-weight: 1000;
+   letter-spacing:-5px;
+   margin-top: 1vw;
+   margin-left: 2vw;
+}
+#page8-content1{
+    height:20%;
+    width: 100%;
+    padding: 2vw;
+     margin-bottom: 1vw;
+}
+#page8-content1 h2{
+    font-size: 2vw;
+    font-weight: 700;
+   
+}
+#page8-content2{
+    height:10%;
+    width: 100%;
+    padding: 1vw;
+     margin-bottom: 2vw;
+     margin-left: 1vw;
+}
+#page8-content-img{
+    height:46%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+#page8-content-img img{
+    width: 40%;
+    height: 90%;
+    margin-bottom: 2vw;
+    
+}
+#page7{
+    height: 100%;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page7-image{
+    height: 80%;
+    width: 92%;
+    
+}
+#page7-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 2vw;
+}
+#page9{
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page9-image{
+height: 100%;
+width:50%;
+
+}
+#page9-image img{
+    height: 100%;
+    width: 80%;
+   padding: 3vw;
+   margin-left: 2vw;
+}
+#page9-content{
+    height: 100%;
+    width: 50%;
+    
+}
+#page9-content-image{
+    height: 60%;
+    width: 85%;
+    background-color: brown;
+    margin-top: 3vw;
+    margin-left: 2vw;
+}
+#page9-content-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position:center;
+    
+}
+#page9-content1{
+    height: 33%;
+    width: 100%;
+    
+   
+}
+#page9-c1{
+    height:100%;
+    width: 100%;
+   
+    display: flex;
+    align-self: center;
+    justify-self:flex-start;
+     margin-top: 2vw;
+     margin-left: 1vw;
+}
+#page9-c2{
+    height:100;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content:end;
+   margin-right: 7vw;
+   margin-bottom: 7vw;
+}
+#page9-c2 h4{
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+#page9-c1 h2{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+#marque{
+    
+    width: 100%;
+    
+    white-space: nowrap;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    padding: 0.8vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    letter-spacing: 3px ;
+    font-family: 'Climate Crisis', sans-serif;
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes move {
+ from{
+    transform: translateX(0);
+ }
+ to{
+    transform: translateX(calc(-100% - 20px));
+ }
+    
+}
+#fotter
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+#fotter1{
+    height: 80%;
+    width: 30%;
+    
+}
+#fotter1 h1{
+    font-family: 'Climate Crisis', sans-serif;
+     font-size: 3vw;
+     font-weight: 1000;
+     margin-left: 7vw;
+}
+#fotter2{
+    height: 80%;
+    width: 45%;
+  
+}
+#fotter2-c1{
+    height: 30%;
+    width: 100%;
+   
+    
+}
+#fotter2-c1 h3{
+    margin-left: 5vw;
+}
+#gola-c12{
+    height: 30%;
+    width: 10%;
+    border-radius: 50%;
+    background-color: rgb(209, 212, 214);
+    border: 2px solid black;
+    margin-top: -6vw;
+}
+#gola-c12 h5{
+    margin-top: 0.9vw;
+    margin-left: 1.3vw;
+}
+#gola-c22 h3{
+    font-size: 2vw;
+    font-weight: 300;
+    margin-left: 3vw;
+    margin-bottom: 3vw;
+}
+#fotter2-img{
+    height: 70%;
+    width: 100%;
+    
+    padding: 2vw;
+}
+#fotter2-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+#fotter3{
+    height: 80%;
+    width: 45%;
+    
+}
+#fotter3-c1{
+    height: 30%;
+    width: 100%;
+   
+}
+#fotter3-c1 h3{
+    margin-left: 5vw;
+}
+#gola-c23{
+    height: 30%;
+    width: 10%;
+    border-radius: 50%;
+    background-color:rgb(213, 208, 208);
+    border: 2px solid black;
+    margin-top: -6vw;
+}
+#gola-c23 h5{
+    margin-top: 0.9vw;
+    margin-left: 1.3vw;
+}
+#fotter3-img{
+    height: 70%;
+    width: 100%;
+    
+     padding: 2vw;
+}
+#fotter3-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
